@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.nio.file.Paths;
 
 public class MatrixApplication extends Application {
 
@@ -17,7 +18,8 @@ public class MatrixApplication extends Application {
 
         Group root = new Group();
 
-        FXMLLoader fxmlLoader = new FXMLLoader(MatrixApplication.class.getResource("D:\\CODES\\Java\\MatrixMathApplicationTest\\src\\main\\resources\\com\\company\\matrixmathapplicationtest\\try.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Paths.get("D:\\CODES\\Java\\MatrixMathApplicationTest\\src\\main\\resources\\com\\company\\matrixmathapplicationtest\\try.fxml").toUri().toURL()) ; // = new FXMLLoader("D:\\CODES\\Java\\MatrixMathApplicationTest\\src\\main\\resources\\com\\company\\matrixmathapplicationtest\\try.fxml");
+    //    FXMLLoader fxmlLoader = new FXMLLoader(MatrixApplication.class.getResource("src/resources/try.fxml"));
         Scene scene = new Scene(fxmlLoader.load() , Color.BISQUE);
     //   Scene scene = new Scene(root , Color.BISQUE);
 
