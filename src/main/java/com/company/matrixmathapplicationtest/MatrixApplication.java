@@ -16,17 +16,23 @@ public class MatrixApplication extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
 
-        Group root = new Group();
+        try {
+            Group root = new Group();
 
-    //    FXMLLoader fxmlLoader = new FXMLLoader(Paths.get("D:\\CODES\\Java\\MatrixMathApplicationTest\\src\\main\\resources\\com\\company\\matrixmathapplicationtest\\try.fxml").toUri().toURL()) ; // = new FXMLLoader("D:\\CODES\\Java\\MatrixMathApplicationTest\\src\\main\\resources\\com\\company\\matrixmathapplicationtest\\try.fxml");
-        FXMLLoader fxmlLoader = new FXMLLoader(MatrixApplication.class.getResource("try.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-    //   Scene scene = new Scene(root , Color.BISQUE);
+            //    FXMLLoader fxmlLoader = new FXMLLoader(Paths.get("D:\\CODES\\Java\\MatrixMathApplicationTest\\src\\main\\resources\\com\\company\\matrixmathapplicationtest\\start.fxml").toUri().toURL()) ; // = new FXMLLoader("D:\\CODES\\Java\\MatrixMathApplicationTest\\src\\main\\resources\\com\\company\\matrixmathapplicationtest\\start.fxml");
+            //    FXMLLoader fxmlLoader = new FXMLLoader(MatrixApplication.class.getResource("start.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("start.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            //   Scene scene = new Scene(root , Color.BISQUE);
 
 
-        primaryStage.setTitle("MatrixApplication");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+            primaryStage.setTitle("MatrixApplication");
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 
