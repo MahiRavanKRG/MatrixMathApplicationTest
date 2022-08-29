@@ -54,6 +54,8 @@ public class Controller {
             // ######################################################################################################
             // Looks like I figured the problem
             // new stage needs a new controller.
+           //  http://www.discoversdk.com/blog/javafx-calculator-with-java-code
+           // REFER FROM THE ABOVE SITE
            ANSWER11.setText("a");
            ANSWER12.setText("a");
            ANSWER13.setText("a");
