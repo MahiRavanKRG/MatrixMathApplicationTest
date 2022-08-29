@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainLable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: BISQUE;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.matrixmathapplicationtest.Controller">
+    <children>
+        <Button layoutX="258.0" layoutY="305.0" mnemonicParsing="false" onAction="#switchToSceneStart" prefHeight="50.0" prefWidth="83.0" text="Done">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Label layoutX="257.0" layoutY="14.0" text="Matrix ANSWER" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="System Italic" size="15.0" />
+            </font>
+        </Label>
+      <Label fx:id="ANSWER11" layoutX="14.0" layoutY="57.0" text="ANSWER11">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ANSWER12" layoutX="262.0" layoutY="57.0" text="ANSWER11">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ANSWER13" layoutX="510.0" layoutY="57.0" text="ANSWER11">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ANSWER21" layoutX="14.0" layoutY="129.0" text="ANSWER11">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ANSWER22" layoutX="262.0" layoutY="129.0" text="ANSWER11">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ANSWER23" layoutX="510.0" layoutY="129.0" text="ANSWER11">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ANSWER31" layoutX="14.0" layoutY="200.0" text="ANSWER11">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ANSWER32" layoutX="262.0" layoutY="200.0" text="ANSWER11">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ANSWER33" layoutX="510.0" layoutY="200.0" text="ANSWER11">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
